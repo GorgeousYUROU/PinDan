@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" href="../css/choumei.min.css">
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a9bb788f629d908cc1685f4.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47065/5a9bbd04f629d908cc1685f7.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47086/5a9bb8d4f629d908cc1685f6.css' rel='stylesheet' type='text/css' />
+		<style>
+			.bold7 {
+				font-family: 'PingFangSCB10956e37091bf3d';
+			}
+			
+			.r7 {
+				font-family: 'PingFangSC_R109583a1c31bf3d';
+			}
+			
+			.m7 {
+				font-family: 'PingFangSCM10957344ad1bf3d';
+			}
+		</style>
+	</head>
+
+	<body style="background-color:#FFFFFF;">
+
+		<header class="mui-bar mui-bar-nav" style="background-color: white;margin-bottom: 10px;border: none;">
+
+			<div class="mui-row" style="margin-top: 7px;">
+				<div class="mui-card-header mui-card-media" style="height:10vw;background-image:url(images/logo.png)"></div>
+
+			</div>
+		</header>
+	
+
+		<nav class="mui-bar mui-bar-tab" style="background-color: white;">
+			<a href="restaurant/order.html" class="mui-tab-item mui-active" id="defaultTab">
+
+				<div style="margin-top: 60%;"><img src="images/3.png" /></div>
+
+			</a>
+			<a href="restaurant/search.html" class="mui-tab-item">
+
+				<div style="margin-top: 60%;"><img src="images/2.png" /></div>
+
+			</a>
+			<a href="restaurant/home.html" class="mui-tab-item">
+
+				<div style="margin-top: 60%;"><img src="images/4.png" /></div>
+
+			</a>
+			<a href="restaurant/GPS.html" class="mui-tab-item">
+
+				<div style="margin-top: 60%;"> <img src="images/5.png" /></div>
+
+			</a>
+		</nav>
+
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript">
+		 // 初始化mui.init()写在这里
+     <!----创建子页面，首个选项卡页面显示，其它均隐藏------>
+     //设置默认打开首页显示的子页序号；
+     var Index=0;
+     //把子页路径写在数组里
+     var subpages=["restaurant/home.html",'restaurant/order.html','restaurant/search.html','restaurant/GPS.html'];
+     //所有的plus-*方法写在mui.plusReady中或者后面
+    mui.plusReady(function(){
+    	//获取当前页面所属的webview窗口对象
+    	var self=plus.webview.currentWebview();
+    	for(var i=0;i<4;i++){
+    		//创建webview子页
+    		var sub=plus.webview.create(
+    			subpages[i],//子页url
+    			subpages[i],//子页id
+    			{
+    				top:'0px',//设置距离顶部的距离
+    				bottom:'50px',//设置距离底部的距离
+    			}
+    		);
+    		//如不是我们设置的默认的子页则隐藏，否则添加到窗口中
+    		if(i!=Index){
+    			sub.hide();
+    		}
+    		//将webview对象填充到窗口
+    		self.append(sub);
+    	}
+    });
+    //当前激活选项
+    var activeTab = subpages[Index],title=document.querySelector(".mui-title");
+    //选项卡激活值
+    mui('.mui-bar-tab').on('tap','a',function(e){
+    	//获取目标子页id
+    	var targetTab = this.getAttribute('href');
+    	if(targetTab==activeTab){
+    		return;
+    	}
+    	//更换标题
+    	//title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
+    	//显示目标选项卡
+    	plus.webview.show(targetTab);
+    	//隐藏当前选项卡
+    	plus.webview.hide(activeTab);
+    	//更改活跃的选项卡
+    	activeTab=targetTab;
+    });
+    
+    
+  
+			
+	</script>
+	
+
+</html>

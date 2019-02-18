@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+         <link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a8e5a59f629d9132407f65f.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47065/5a8e5b86f629d9132407f660.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a9100e6f629d911e00993d9.css' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.mui-bar .mui-btn {
+				font-weight: normal;
+				font-size: 17px;
+			}
+			
+			.mui-bar .mui-btn-link {
+				top: 1px;
+			}
+			
+			.mui-content img{
+				width: 100%;
+			}
+			
+			
+		
+			.bold1{
+				font-family:'PingFangSCB10613a34e01bf3d';
+			}
+			.bold2{
+				font-family:'PingFangSCB106b94cb991bf3d';
+				font-size: 17px;
+				color: black;
+			}
+			.regular_1{
+				font-family:'PingFangSC_R10613ecc6a1bf3d';
+			}
+		
+		</style>
+	</head>
+
+	<body style="background-color: white;">
+
+		<header id="header" class="mui-bar mui-bar-transparent">
+			<div class="mui-pull-left">
+			<button id='back' class=".mui-action-back" style="background: url(../images/back.png) 0 0 no-repeat;width:30px;height: 30px;border: none;margin-left: -8px;margin-top: 5px;"></button>
+			</div>
+			<div class="mui-pull-right">
+			<button style="background: url(../images/love2.png) 0 0 no-repeat;width: 35px;height: 30px;border: none;margin-right: 5px;padding-top: -20px;"></button>
+			</div>
+		</header>
+
+		<div class="mui-content" style="background-color: white;">
+			<!--静态图片-->
+			<img id="img1" src="../images/hanbg.png" style="height: 300px"/>
+			<p class='bold1' style="font-size: 23px;color: #000000;margin-top: 3%;margin-left: 33%;">汉堡王套餐</p>
+		<p class='regular_1' style="font-size: 14px;margin-left: 36%;margin-bottom: -10px;">双龙街道106号</p>
+			<button  type="button" id="pindan" style="background: url(../images/yijian.png) 0 0 no-repeat;width: 50%;height: 50px;border: none;margin-left:36%;margin-top: 3%;"></button>
+			
+			<div class="mui-row" style="margin-left:16%;margin-top: 10px;" >
+				<div class="mui-col-sm-4">
+					<button type="button"   style="background: url(../images/time.png)0 0 no-repeat;width:60px;height:60px;border:none"></button>
+					<p style="margin-top: -20px;margin-left: -10px;" class="bold2">7am-11pm</p>
+					<p style="margin-left: 5px;margin-top: -5px;">时间</p>
+					</div>
+					<div class="mui-col-sm-4" style="margin-left: 11%;">
+					<button type="button" id="position" class="mui-col-sm-4" style="background: url(../images/dingwei2.png)0 0 no-repeat;width:60px;height:60px;border:none"></button>
+					<p style="margin-top: -20px;margin-left: 7%;" class="bold2">1km</p>
+					<p style="margin-left: 5px;margin-top: -5px;">距离</p>
+					</div>
+					<div class="mui-col-sm-4"  style="margin-left: 10%;">
+					<button type="button" id="comment" class="mui-col-sm-4" style="background: url(../images/pinglun.png)0 0 no-repeat;width:60px;height:60px;border:none"></button>
+					<p style="margin-top: -20px;" class="bold2">1500</p>
+					<p style="margin-left: 5px;margin-top: -5px;">评论</p>
+					</div>
+				</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var btn1 = document.getElementById("comment");   
+    //监听点击事件   
+    btn1.addEventListener("tap",function () {  
+    	
+     var webview = mui.openWindow({
+					url: 'pinglunindex.html',
+					id: 'pinglunindex.html',
+				});
+    }); 
+    var btn2=document.getElementById("back");
+	btn2.addEventListener("click",function(){
+    mui.back()
+});
+var btn3=document.getElementById("pindan");
+btn3.addEventListener("tap",function () { 
+	var webview = mui.openWindow({
+					url: 'choice.html',
+					id: 'choice.html',
+				});
+});
+
+		</script>
+
+	</body>
+
+</html>

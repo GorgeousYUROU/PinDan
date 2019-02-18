@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47086/5a924161f629d80784d8ed95.css' rel='stylesheet' type='text/css' />
+		<style>
+			.Medium {
+				font-family: 'PingFangSCM107078acad1bf3d';
+				color: black;
+				font-size: 12px;
+			}
+			
+			.box {
+				border: 1px solid #FFFFFF;
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
+				border-radius: 8px;
+				-webkit-box-shadow: #666 0px 0px 10px;
+				-moz-box-shadow: #666 0px 0px 10px;
+				box-shadow: #666 0px 0px 10px;
+				behavior: url(/PIE.htc);
+			}
+			
+			.button1{
+				border: solid 1px #81bbc1;
+			}
+			.button1:checked{
+				border: solid 1px #ffa5b7;
+				color:#ffa5b7;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: white;">
+		<header class="mui-bar mui-bar-nav" style="background-color: white;">
+
+			<div class="mui-row" style="margin-top: 13px;">
+				<button class=".mui-action-back" id="back" style="background: url(../images/back.png) 0 0 no-repeat;width:30px;height: 30px;border: none;margin-left: -8px;margin-top: -6px;margin-right: 5px;"></button>
+				<span style="margin-top: 20px;">请选择拼单要求</span>
+			</div>
+		</header>
+		<div class="mui-content" style="background-color: white;">
+			<div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right" href="#" style="border-bottom: 1px solid #81bbc1;background-color: white;">菜&nbsp;&nbsp;&nbsp;品</a>
+						<div class="mui-collapse-content ">
+							<div class="mui-row">
+							<div style="border-radius: 15px;height: 65px;width: 30%;margin-top: 10px;margin-right: 15px;margin-left: -6px;" class="box mui-col-sm-4">
+								<button style=" margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium button1 " id="button0">拼单套餐A</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 30%;margin-top: 10px;margin-right: 15px;" class="box mui-col-sm-4">
+								<button style=" margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium button1" id="button1">拼单套餐B</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 30%;margin-top: 10px;" class="box mui-col-sm-4">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button2">拼单套餐C</button>
+							</div>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 35%;margin-top: 15px;" class="box mui-col-sm-4">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button3">沙拉组合套餐</button>
+							</div>
+						</div>
+					</li>
+					
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right" href="#" style="border-bottom: 1px solid #81bbc1;background-color: white;" class="Medium">口&nbsp;味&nbsp;偏&nbsp;好</a>
+						<div class="mui-collapse-content ">
+							<div class="mui-row">
+							<div style="border-radius: 15px;height: 65px;width: 22%;margin-top: 10px;margin-right: 18px;margin-left: -7px;" class="box mui-col-sm-3">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 5px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button4">少辣</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 22%;margin-top: 10px;margin-right: 18px;margin-left: -6px;" class="box mui-col-sm-3">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 5px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button5">中辣</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 22%;margin-top: 10px;margin-right: 18px;margin-left: -6px;" class="box mui-col-sm-3">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 5px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button6">重辣</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 22%;margin-top: 10px;margin-left: -6px;" class="box mui-col-sm-3">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 5px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button7">少盐</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 26%;margin-top: 15px;" class="box mui-col-sm-4">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button8">不加蒜</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 28%;margin-top: 15px;margin-left: 8px;" class="box mui-col-sm-4">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button9">不加胡椒</button>
+							</div>
+							</div>
+							
+						</div>
+					</li>
+					
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right" href="#" style="border-bottom: 1px solid #81bbc1;background-color: white;">酱&nbsp;料&nbsp;选&nbsp;择</a>
+						<div class="mui-collapse-content ">
+							<div class="mui-row">
+							<div style="border-radius: 15px;height: 65px;width: 22%;margin-top: 10px;margin-right: 15px;margin-left: -6px;" class="box mui-col-sm-4">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button10">辣酱</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 25%;margin-top: 10px;margin-right: 15px;" class="box mui-col-sm-4">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button11">烤肉酱</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 25%;margin-top: 10px;" class="box mui-col-sm-4">
+								<button style="border: solid 1px #81bbc1; margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;" class="Medium" id="button12">沙拉酱</button>
+							</div>
+							</div>
+							
+						</div>
+					</li>
+					
+				</ul>
+				<div style="background-color: #8db1b5;width: 100%;margin-top: 10px;">
+					<button type="button" id="choice" style="background: url(../images/choice.png) 0 0 no-repeat;border: none;height: 38px;width: 40%;margin-top: 8px;margin-left: 43%;"></button>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			var btn2=document.getElementById("back");
+	btn2.addEventListener("click",function(){
+    mui.back()
+    
+});
+
+var btn=document.getElementById("choice");
+	btn.addEventListener("click",function(){
+   var webview = mui.openWindow({
+					url: 'peidui.html',
+					id: 'peidui.html',
+			
+					 waiting:{  
+                          title:'',//等待对话框上显示的提示内容  
+                          options:{  
+                               loading:{icon:'../images/touxiang6.png',interval: "1ms",height: "50px",},  
+                               background:"rgba(0,0,0,0)",  
+                            }  
+                        }  
+                    }); 
+    
+});
+
+var flag1=[0,0,0,0,0,0,0,0,0,0,0,0,0];
+    document.addEventListener('changeColor',function (e) { 
+	var id=e.detail.id;
+	var j=parseInt(id.substring(6));
+	var btn3=document.getElementById(id);
+	if(flag1[j]==0)
+	{
+		btn3.style="border: solid 1px #ffa5b7;color:#ffa5b7;margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;";
+		flag1[j]=1;
+	}
+	else {
+	btn3.style="border: solid 1px #81bbc1;color:black;margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;";
+	flag1[j]=0;
+	}
+});
+
+var detailPage=null;
+mui(".mui-table-view-cell").on('tap','button',function(){
+  //获取id
+  var id = this.getAttribute("id");
+  //传值给详情页面，通知加载新数据
+  if(!detailPage){
+    detailPage = plus.webview.getWebviewById('choice.html');
+  }
+  mui.fire(detailPage,'changeColor',{id:id});
+});
+		</script>
+	</body>
+
+</html>

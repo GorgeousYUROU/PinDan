@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>M-BOX</title>
+		<link href="../css/mui.min.css" rel="stylesheet"/>
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a8e5a59f629d9132407f65f.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47065/5a8e5b86f629d9132407f660.css' rel='stylesheet' type='text/css' />
+		<style>
+			.bold1{
+				font-family:'PingFangSCB10613a34e01bf3d';
+			}
+			.regular_1{
+				font-family:'PingFangSC_R10613ecc6a1bf3d';
+			}
+		</style>
+</head>
+<body style="background-color: white;">
+	<header class="mui-bar mui-bar-nav" style="background-color: white;">
+		
+		<div class="mui-row" style="margin-top: 7px;">
+			<div class="mui-col-xs-1">
+		     <button id='back' class=".mui-action-back" style="background: url(../images/back.png) 0 0 no-repeat;width:30px;height: 30px;border: none;margin-left: -8px;margin-top: 5px;"></button>
+		   </div>    
+		</div>
+	</header>
+	<!----------底部导航栏-------------------------------------------->
+	<nav class="mui-bar mui-bar-tab " id="nav" style="background-color: #e0eff0;">
+			<div class="mui-row" style="margin-top: 5px;margin-bottom: -10px;">
+				<div class="mui-col-sm-2"><img src="../images/chatT.png"></img>
+				</div>
+				<div class="mui-col-sm-10" style="margin-top: 2px;margin-left: 5px;width: 80%;font-size: 10px;"><input type="text" class="mui-input-clear" placeholder="加入评论。。。"></div>
+			</div>
+
+		</nav>
+		
+	
+	
+	</div>
+	<script src="../js/mui.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+    mui.init({
+    subpages:[{
+      url:'pinglun.html',
+      id:'pinglun.html',
+      styles:{
+        top:'45px',//mui标题栏默认高度为45px；
+        bottom:'50px'//默认为0px，可不定义；
+      }
+    }]
+  });
+  
+  var btn2=document.getElementById("back");
+	btn2.addEventListener("click",function(){
+    mui.back()
+});
+    
+    
+	</script>
+</body>
+</html>

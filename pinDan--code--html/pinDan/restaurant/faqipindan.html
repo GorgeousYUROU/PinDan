@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47065/5a8c2178f629d91404f32906.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47066/5a8c36b8f629d91404f3290e.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a8c37a2f629d91404f32911.css' rel='stylesheet' type='text/css' />
+		<style>
+			.regular_24 {
+				font-family: 'PingFangSC_R10588c05f81bf3d';
+				font-size: 20px;
+			}
+			
+			.light {
+				font-family: 'PingFangSC_L1058df0a691bf3d';
+			}
+			
+			.price {
+				font-family: 'PingFangSCB1058e29af31bf3d';
+				color: #fd9dc1;
+			}
+			</style>
+	</head>
+
+	<body style="background-color: white;">
+		<div class="mui-content" style="background-color: white;">
+			<img src='../images/bg.png'/ style="width: 100%;">
+			<div class="mui-card" style="width:80%;height:auto;margin-top: -80px;margin-left: 10%;border-radius: 10px;" >
+				<div class="mui-card-header mui-card-media">
+					<div class="mui-row">
+					<div class="mui-pull-left">
+						<p class="bold4" style="color: black;font-size: 16px;">拼单信息</p>
+						<p class="bold4">沙拉组合套餐</p>
+						<div class="mui-row" style="width: 40%;height: 15%;">
+					<div class="mui-pull-left">
+					<input class="mui-input-numbox" id="num" type="number" style="color: black;width: 40%;height:28px;padding-top: -20px;font-size: 13px;" value="1"/>
+					<span style="color:black;border-color:#f7fbfb;">份</span>
+					</div>
+					
+					<div class="mui-pull-right" style="margin-top: -43px;">
+						
+					<p><button type="button" id="add" type="button" style="height: 9px;width:5px;border: none;background: url(../images/shang.png) 0 0 no-repeat;"></button></p>
+					<button type="button" id="minus" type="button" style="height: 9px;width:5px;margin-top: -15px;border: none;background: url(../images/xia.png) 0 0 no-repeat;"></button>
+					</div>
+				</div>
+						<p class="price" style="font-size: 20px;margin-top: -8px;">￥35</p>
+					</div>
+					<div class="mui-pull-right" style="margin-top: -150px;" >
+						<button type="button"  style="background: url(../images/add1.png)0 0 no-repeat;width:100%;height:80px;border:none;margin-right: 50px;margin-top: 10%;"></button>
+					</div>
+					</div>
+					<div class="mui-input-row" style="margin-right: 5px;border-radius: 10px;">
+					<textarea id="textarea" rows="4"  placeholder="请输入拼单要求" style="width:90%;margin-left: 4%;color:black"></textarea>
+				    </div>
+				    
+				    <div class="mui-row" style="margin-left:10px;margin-top: -10px;" >
+					<button type="button" id="return" class="mui-col-sm-3" style="background: url(../images/return.png)0 0 no-repeat;width:25%;height:60px;border:none;margin-left:0px;"></button>
+					<button type="button" id="send" class="mui-col-sm-3" style="background: url(../images/send.png)0 0 no-repeat;width:25%;height:60px;border:none"></button>
+					<button type="button" id="dingwei" class="mui-col-sm-3" style="background: url(../images/position.png)0 0 no-repeat;width:25%;height:60px;border:none"></button>
+					<button type="button" id="cancel" class="mui-col-sm-3" style="background: url(../images/cancel.png)0 0 no-repeat;width:25%;height:60px;border:none"></button>
+				</div>
+				</div>
+					
+				
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			add=document.getElementById("add");
+			add.addEventListener("tap",function () {  
+				var num=document.getElementById("num").value;
+    	    if(num>=0){
+    	    	num++;
+    	    }
+    	    document.getElementById("num").value=num;
+    }); 
+    minus=document.getElementById("minus");
+			minus.addEventListener("tap",function () {  
+				var num=document.getElementById("num").value;
+    	    if(num>=1){
+    	    	num--;
+    	    }
+    	    else {num=0;}
+    	    document.getElementById("num").value=num;
+    }); 
+    
+    send=document.getElementById("send");
+			send.addEventListener("tap",function () {  
+				var main = plus.webview.currentWebview().parent();
+			//触发主页面的gohome事件
+			mui.fire(main,"gohome1",{
+            tiao:"restaurant/pindan.html"
+			});
+    }); 
+    
+    btn=document.getElementById("return");
+			btn.addEventListener("tap",function () {  
+				var main = plus.webview.currentWebview().parent();
+			//触发主页面的gohome事件
+			mui.fire(main,"gohome3",{
+            tiao:"restaurant/menu.html"
+			});
+    });
+    
+    btn1=document.getElementById("cancel");
+			btn1.addEventListener("tap",function () {  
+			document.getElementById("num").value=1;
+			document.getElementById("textarea").value="";
+    });
+    
+    var btn3 = document.getElementById("dingwei");   
+    //监听点击事件   
+    btn3.addEventListener("tap",function () {  
+    	
+     var webview = mui.openWindow({
+					url: 'distance.html',
+					id: 'distance.html',
+				});
+    }); 
+		</script>
+	</body>
+
+</html>

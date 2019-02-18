@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47065/5a8c2178f629d91404f32906.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47066/5a8c36b8f629d91404f3290e.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a8c37a2f629d91404f32911.css' rel='stylesheet' type='text/css' />
+		<style>
+			.regular_24 {
+				font-family: 'PingFangSC_R10588c05f81bf3d';
+				font-size: 20px;
+			}
+			
+			.light {
+				font-family: 'PingFangSC_L1058df0a691bf3d';
+			}
+			
+			.price {
+				font-family: 'PingFangSCB1058e29af31bf3d';
+				color: #fd9dc1;
+			}
+		</style>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/swiper.min.css">
+		<link rel="stylesheet" href="../css/choumei.min.css">
+
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="background-color: white;">
+
+			<div class="mui-row" style="margin-top: 7px;">
+				<div class="mui-col-xs-1">
+					<button class=".mui-action-back" id='back' style="background: url(../images/back.png) 0 0 no-repeat;width:30px;height: 30px;border: none;margin-left: -8px;margin-top: 5px;"></button>
+				</div>
+				<h4  style="padding-top: 5px;padding-left: 140px;">菜&nbsp;&nbsp;&nbsp;&nbsp;单<h4>
+		    
+		</div>
+	</header>
+<div class="mui-content" style="background-color: white;">
+<div class="swiper-container" >
+	
+	<div class="swiper-wrapper" id="swipe" style="margin-top: 20px;">
+		<div class="swiper-slide">
+			<h5 style="margin-left: 90px;color:#92c4c9;">拼单套餐A</h5>
+			<p></p>
+			<img src="../images/menu2.png" class="main-img">
+			<div style="margin-top: 20px;padding-left: 90px;">
+				                         <span class="price" style="font-size: 23px;">￥16</span><br>
+				                         <span class="light" style="font-size: 15px;margin-top: 10px;margin-left: 10px;">2人份</span><br><br>
+										<span class="regular_24" style=";padding-top: 10px;margin-left: -12px;">套餐AAA</span><br>
+										<span class="light" style="font-size: 10px;margin-left: -10px;">赠送爽味黄瓜一份</span><br>
+										<br>
+									</div>
+			
+		</div>
+		<div class="swiper-slide">
+			<h5 style="margin-left: 90px;color:#92c4c9">拼单套餐B</h5>
+			<p></p>
+			<img src="../images/menu1.png" class="main-img">
+			<div style="margin-top: 20px;padding-left: 90px;">
+				                         <span class="price" style="font-size: 23px;">￥35</span><br>
+				                         <span class="light" style="font-size: 15px;margin-top: 10px;margin-left: 10px;">2人份</span><br><br>
+										<span class="regular_24" style=";padding-top: 10px;margin-left: -25px;">沙拉组合套餐</span><br>
+										<span class="light" style="font-size: 10px;margin-left: -10px;">赠送爽味黄瓜一份</span><br>
+										
+										
+									</div>
+		</div>
+		
+		<div class="swiper-slide">
+			<h5 style="margin-left: 90px;color:#92c4c9">拼单套餐C</h5>
+			<p></p>
+			<img src="../images/menu3.png" class="main-img">
+			<div style="margin-top: 20px;padding-left: 90px;">
+				                         <span class="price" style="font-size: 23px;">￥42</span><br>
+				                         <span class="light" style="font-size: 15px;margin-top: 10px;margin-left: 10px;">3人份</span><br><br>
+										<span class="regular_24" style=";padding-top: 10px;margin-left: -25px;">特色组合套餐</span><br>
+										<span class="light" style="font-size: 10px;margin-left: -10px;">赠送爽味黄瓜一份</span><br>
+										
+										
+									</div>
+		</div>
+		
+	</div>
+<button type="button" id="pindan" style="background: url(../images/menub1.png) 0 0 no-repeat;width: 108px;height: 30px;border: none;margin-left: 70px;margin-top: 15px;"  />
+		<button type="button" id="order" style="background: url(../images/menub2.png) 0 0 no-repeat;width: 108px;height: 30px;border: none;margin-top: 15px;margin-left: -3px;" />
+</div>
+
+<script type="text/javascript" src="../js/swiper.min.js"></script>
+<script type="text/javascript" src="../js/choumei.min.js"></script>
+<script src="../js/mui.min.js"></script>
+<script type="text/javascript">
+
+
+
+var btn=document.getElementById("back");
+	btn.addEventListener("click",function(){
+    mui.back()
+});
+
+var btn1=document.getElementById("order");
+	btn1.addEventListener("click",function(){
+    var main = plus.webview.currentWebview().parent();
+			//触发主页面的gohome事件
+			mui.fire(main,"gohome2",{
+            tiao:"restaurant/order.html"
+			});
+});
+
+var btn2=document.getElementById("pindan");
+	btn2.addEventListener("click",function(){
+    var main = plus.webview.currentWebview().parent();
+			//触发主页面的gohome事件
+			mui.fire(main,"gohome3",{
+            tiao:"restaurant/faqipindan.html"
+			});
+});
+</script>
+
+
+</body>
+
+</html>

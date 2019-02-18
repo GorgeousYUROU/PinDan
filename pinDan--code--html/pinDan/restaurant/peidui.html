@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47086/5a924161f629d80784d8ed95.css' rel='stylesheet' type='text/css' />
+		<style>
+			.Medium {
+				font-family: 'PingFangSCM107078acad1bf3d';
+				color: black;
+				font-size: 12px;
+			}
+			
+			.box {
+				border: 1px solid #FFFFFF;
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
+				border-radius: 8px;
+				-webkit-box-shadow: #666 0px 0px 10px;
+				-moz-box-shadow: #666 0px 0px 10px;
+				box-shadow: #666 0px 0px 10px;
+				behavior: url(/PIE.htc);
+			}
+			</style>
+	</head>
+
+	<body style="background-color:#ebf2f2;">
+
+		<header id="header" class="mui-bar mui-bar-transparent">
+			<div class="mui-pull-left">
+			<button id='back' class=".mui-action-back" style="background: url(../images/back.png) 0 0 no-repeat;width:30px;height: 30px;border: none;margin-left: -8px;margin-top: 5px;"></button>
+			</div>
+			
+		</header>
+
+		<div class="mui-content" style="background-color:#ebf2f2;">
+			<div style="border-radius: 15px;height: 65px;width: 30%;margin-top: 23%;margin-left:30%;background-color: white;" class="box mui-col-sm-4" id="button0">
+								<button style=" margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;border: solid 1px #ffa5b7;
+				color:#ffa5b7;  " class="Medium button1 " >拼单套餐A</button>
+							</div>
+							<div style="border-radius: 15px;height: 65px;width: 20%;margin-top:27%;margin-left:62%;background-color: white;" class="box mui-col-sm-4" id="button1">
+								<button style=" margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;border: solid 1px #ffa5b7;
+				color:#ffa5b7;  " class="Medium button1 " >中辣</button>
+							</div>
+			<!--静态图片-->
+			<img src="../images/rotate.png" id="rotate" style="width: 50%;margin-top: -42%;margin-left: 20%;"/>
+		
+		<div style="border-radius: 15px;height: 65px;width: 25%;margin-top: -7%;margin-left:5%;background-color: white;" class="box mui-col-sm-4" id="button2">
+								<button style=" margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;border: solid 1px #ffa5b7;
+				color:#ffa5b7;  " class="Medium button1 " >不加蒜</button>
+							</div>
+		<div style="border-radius: 15px;height: 65px;width: 25%;margin-top: -3%;margin-left:50%;background-color: white;" class="box mui-col-sm-4" id="button3">
+								<button style=" margin-top: 5px;margin-left: 7px;width: 85%;height: 80%;border-radius: 11px;border: solid 1px #ffa5b7;
+				color:#ffa5b7;  " class="Medium button1 " >沙拉酱</button>
+							</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			
+    var btn2=document.getElementById("back");
+	btn2.addEventListener("click",function(){
+    mui.back()
+});
+
+function customEvent(){  
+  var webview = mui.openWindow({
+					url: 'peiduichenggong1.html',
+					id: 'peiduichenggong1.html',
+			
+					 waiting:{  
+                          title:'',//等待对话框上显示的提示内容  
+                          options:{  
+                               loading:{icon:'../images/touxiang6.png',interval: "1ms",height: "50px",},  
+                               background:"rgba(0,0,0,0)",  
+                            }  
+                        }  
+                    }); 
+}
+
+
+var ti = document.getElementById("rotate");
+ti.addEventListener("tap", function() {
+	//alert("你正在向左滑动");
+	var a1 = document.getElementById("button0");
+	a1.style.transform="rotate(720deg)";
+	a1.style.transformOrigin="200px 200px";
+	a1.style.transition="all 3s";
+	var a2 = document.getElementById("button1");
+	a2.style.transform="rotate(720deg)";
+	a2.style.transformOrigin="200px 200px";
+	a2.style.transition="all 3s";
+	var a3 = document.getElementById("button2");
+	a3.style.transform="rotate(720deg)";
+	a3.style.transformOrigin="200px 200px";
+	a3.style.transition="all 3s";
+	var a4 = document.getElementById("button3");
+	a4.style.transform="rotate(720deg)";
+	a4.style.transformOrigin="200px 200px";
+	a4.style.transition="all 3s";
+	ti.style.transform="rotate(720deg)";
+	ti.style.transformOrigin="center";
+	ti.style.transition="all 3s";
+	setTimeout(customEvent, 4000);
+	
+});
+
+
+
+
+		</script>
+
+	</body>
+
+</html>

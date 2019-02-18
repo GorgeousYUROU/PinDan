@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body style="background-color: white;">
+		<header class="mui-bar mui-bar-nav" style="background-color: white;">
+		
+		<div class="mui-row" style="margin-top: 1px;">
+			<div class="mui-row" style="margin-top: 5px;">
+			<div class="mui-pull-left">
+		     <button class=".mui-action-back" id="back" style="background: url(../images/back.png) 0 0 no-repeat;width:30px;height: 30px;border: none;margin-left: 8px;margin-top: 5px;"></button>
+		    </div>
+			
+		    <div class="mui-pull-right" style="padding-right:5px;margin-top: 5px;">
+		     <img src="../images/chat.png" />
+		    </div>
+		    
+		</div>
+	</header>
+		<div class="mui-content" style="background-color: white;">
+			
+			
+			<div class="mui-row" style="margin-left: 35%;margin-top: 5%;">
+			<img src="../images/datouxiang.png"  /> 
+			</div>
+			<span style="font-size:20px;margin-top: 8%;margin-left: 42%;" class='bold4'>NANA</span><br>
+			<div class="mui-row" style="margin-left: 35%;margin-top: 2%;">
+			<span style="font-size:18px;margin-top: 5%;margin-left: -8px;color: #b4b4c7;" class='light4' >37</span>
+			<img src='../images/love.png'>
+			<span style="font-size:18px;margin-top: 5%;margin-left: 5%;color: #b4b4c7;" class='light4'>256&nbsp;&nbsp;好友</span>
+			</div>
+			<button  style="background: url(../images/addf.png) 0 0 no-repeat;width:200px;height: 60px;border: none;margin-left:35%;margin-top: 5%;"></button>
+			<img src='../images/f1.png' style='margin-left: 10%;'/>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			var btn = document.getElementById("back");
+				btn.addEventListener("click", function() {
+					mui.back()
+				});
+		</script>
+	</body>
+
+</html>

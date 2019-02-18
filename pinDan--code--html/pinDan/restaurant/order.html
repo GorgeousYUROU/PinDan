@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47065/5a8c2178f629d91404f32906.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47066/5a8c36b8f629d91404f3290e.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a8c37a2f629d91404f32911.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a8e1901f629d9132407f62b.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47066/5a8e1b78f629d9132407f62c.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47159/5a8e7e52f629d9132407f685.css' rel='stylesheet' type='text/css' />
+		<link href='http://cdn.webfont.youziku.com/webfonts/nomal/114493/47065/5a8e81cef629d9132407f688.css' rel='stylesheet' type='text/css' />
+		<style>
+			.regular_24 {
+				font-family: 'PingFangSC_R10588c05f81bf3d';
+				font-size: 15px;
+			}
+			
+			.light {
+				font-family: 'PingFangSC_L1058df0a691bf3d';
+			}
+			
+			.price {
+				font-family: 'PingFangSCB1058e29af31bf3d';
+				color: #fd9dc1;
+			}
+			
+			.bold4 {
+				font-family: 'PingFangSCB10603af60b1bf3d';
+			}
+			
+			.light4 {
+				font-family: 'PingFangSC_L106044983b1bf3d';
+			}
+			.bold3{
+				font-family:'PingFangSCB1061c6b9881bf3d';
+				font-size:17px;
+			}
+			.regular3{
+				font-size: 13px;
+				color:#d8dada;
+				font-family:'PingFangSC_R1061d4550e1bf3d';
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content" style="background-color: white;">
+			<div id="slider" class="mui-slider">
+				<div style="background: url(../images/order_bg.png) 0 0 no-repeat;width: auto;height: 300px;">
+					<button class=".mui-action-back" id='back' style="background: url(../images/back.png) 0 0 no-repeat;width:30px;height: 30px;border: none;"></button>
+					<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+						<a style="padding-top: 230px;" id="information" class="mui-control-item regular_24" href="#item1mobile">
+							拼单信息
+						</a>
+						<a class="mui-control-item regular_24" id="order1" href="#item2mobile">
+							订单
+						</a>
+						<a class="mui-control-item regular_24" id="collect" href="#item3mobile">
+							收藏
+						</a>
+						<a class="mui-control-item regular_24" id="friend" href="#item4mobile">
+							好友
+						</a>
+					</div>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<div class="mui-row">
+									<div class="mui-col-sm-2" style="margin-right: 13px;margin-top: 30px;">1</div>
+									<div class="mui-col-sm-3" style="margin-right: 30px;"><img src="../images/order_f1.png" /></div>
+									<div class="mui-col-sm-3" style="margin-top: 3px;">
+										<span class="regular_24">沙拉组合套餐</span><br>
+										<span class="light" style="font-size: 10px;">赠送爽味黄瓜一份</span><br>
+										<span class="light" style="font-size: 15px;">2人份</span><br>
+										<span class="price">￥35</span><br>
+									</div>
+
+									<div class="mui-pull-right">
+										<img src="../images/order_11.png"></img>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<div class="mui-row">
+									<div class="mui-col-sm-2" style="margin-right: 13px;margin-top: 30px;">2</div>
+									<div class="mui-col-sm-3" style="margin-right: 30px;"><img src="../images/order_f3.png" /></div>
+									<div class="mui-col-sm-3" style="margin-right: 18px;margin-top: 3px;">
+										<span class="regular_24">拼单套餐C</span><br>
+										<span class="light" style="font-size: 15px;">2人份</span><br>
+										<span class="price">￥63</span><br>
+									</div>
+
+									<div class="mui-pull-right">
+										<img src="../images/order_12.png" style="margin-top: 30px;margin-right: 19px;"></img>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell" style="background-color:#ebf2f2;">
+								<div class="mui-row">
+									<div class="mui-col-sm-2" style="margin-right: 13px;margin-top: 30px;">3</div>
+									<div class="mui-col-sm-3" style="margin-right: 30px;"><img src="../images/order4.png" /></div>
+									<div class="mui-col-sm-3" style="margin-top: 3px;">
+										<span class="regular_24">特色炒冰淇淋</span><br>
+										<span class="light" style="font-size: 15px;">3人份</span><br>
+										<span class="price">￥42</span><br>
+									</div>
+
+								</div>
+							</li>
+
+						</ul>
+					</div>
+
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<div class="mui-row">
+									<div class="mui-col-sm-2" style="margin-right: 13px;margin-top: 30px;">1</div>
+									<div class="mui-col-sm-3" style="margin-right: 30px;"><img src="../images/order_f1.png" /></div>
+									<div class="mui-col-sm-3" style="margin-top: 3px;">
+										<span class="regular_24">沙拉组合套餐</span><br>
+										<span class="light" style="font-size: 10px;">赠送爽味黄瓜一份</span><br>
+										<span class="light" style="font-size: 15px;">2人份</span><br>
+										<span class="price">￥35</span><br>
+									</div>
+									<div class="mui-col-sm-1">
+										<div class=" mui-checkbox mui-left" style="margin-top: 25px;">
+
+											<input name="checkbox1" value="Item 3" type="checkbox" checked>
+										</div>
+									</div>
+									<div class="mui-pull-right">
+										<button style="background: url(../images/order_b1.png);border: none;width: auto;height: 40px;margin-top: 25px;margin-right: -5px;"> </button>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<div class="mui-row">
+									<div class="mui-col-sm-2" style="margin-right: 13px;margin-top: 30px;">2</div>
+									<div class="mui-col-sm-3" style="margin-right: 30px;"><img src="../images/order_f2.png" /></div>
+									<div class="mui-col-sm-3" style="margin-top: 3px;">
+										<span class="regular_24">特色炒冰淇淋</span><br>
+										<span class="light" style="font-size: 15px;">3人份</span><br>
+										<span class="price">￥42</span><br>
+									</div>
+									<div class="mui-col-sm-1">
+										<div class=" mui-checkbox mui-left" style="margin-top: 25px;">
+
+											<input name="checkbox1" value="Item 3" type="checkbox" checked>
+										</div>
+									</div>
+									<div class="mui-pull-right">
+										<button style="background: url(../images/order_b1.png);border: none;width: auto;height: 40px;margin-top: 25px;margin-right: -5px;"> </button>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<div class="mui-row">
+									<div class="mui-col-sm-2" style="margin-right: 13px;margin-top: 30px;">3</div>
+									<div class="mui-col-sm-3" style="margin-right: 30px;"><img src="../images/order_f3.png" /></div>
+									<div class="mui-col-sm-3" style="margin-right: 18px;margin-top: 3px;">
+										<span class="regular_24">拼单套餐C</span><br>
+										<span class="light" style="font-size: 15px;">2人份</span><br>
+										<span class="price">￥63</span><br>
+									</div>
+									<div class="mui-col-sm-1">
+										<div class=" mui-checkbox mui-left" style="margin-top: 25px;">
+
+											<input name="checkbox1" value="Item 3" type="checkbox">
+										</div>
+									</div>
+									<div class="mui-pull-right">
+										<button style="background: url(../images/order_b1.png);border: none;width: auto;height: 40px;margin-top: 25px;margin-right: -5px;"> </button>
+									</div>
+								</div>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<div class="mui-pull-left">
+									<div class="mui-row">
+										<div class="mui-col-sm-1">
+											<img src="../images/order_12.png"></img>
+										</div>
+										<div class="mui-col-sm-1" style="margin-top: 3px;">
+											<span style="margin-top: 2px;">全选</span>
+										</div>
+										
+									</div>
+								</div>
+								<div class="mui-pull-right">
+									
+									<div class="mui-row">
+										<div class="mui-col-sm-1" style="margin-top: 3px;">
+											<span style="margin-top: 2px;">合计为：</span>
+										</div>
+										<div class="mui-col-sm-1 price" style="margin-top: 3px;">
+											<span style="margin-top: 2px;margin-right: 10px;">￥77</span>
+										</div>
+										<div class="mui-col-sm-1" style="margin-top: -3px;margin-right: -4px;">
+											<img src="../images/count.png"></img>
+										</div>
+										
+										
+									</div>
+								</div>
+
+							</li>
+						</ul>
+
+					</div>
+
+					<div id="item3mobile" class="mui-slider-item mui-control-content mui-active">
+
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<div class="mui-card">
+				<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../images/s1.png)"></div>
+				
+				<div class="mui-card-footer" style="background-color: #f6f6f6;">
+					<div class="mui-pull-left">
+			                <div class="mui-row">
+			                	<div class="mui-col-sm-9"><span class="bold3" ">素食主义</span></div>
+							    <div class="mui-col-sm-3"><img src="../images/x1.png"  /></div>
+						
+						</div>
+						<p class='regular3'>西宁花园文化路对面</p>
+					</div>
+					<div class="mui-pull-right"><img src="../images/love2.png" style="margin-top: 10px;"/> </div>
+				</div>
+			</div>
+							</li>
+<li class="mui-table-view-cell">
+								<div class="mui-card">
+				<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../images/s2.png)"></div>
+				
+				<div class="mui-card-footer" style="background-color: #f6f6f6;">
+					<div class="mui-pull-left">
+			                <div class="mui-row">
+			                	<div class="mui-col-sm-9"><span class="bold3" ">甜蜜坊</span></div>
+							    <div class="mui-col-sm-3"><img src="../images/x2.png"  /></div>
+						
+						</div>
+						<p class='regular3'>家家悦二楼</p>
+					</div>
+					<div class="mui-pull-right"><img src="../images/love2.png" style="margin-top: 10px;"/> </div>
+				</div>
+			</div>
+							</li>
+
+						</ul>
+					</div>
+
+					<div id="item4mobile" class="mui-slider-item mui-control-content mui-active" style="background-color: #f1f2f6;">
+						<div>
+							<p class="light4" style="font-size: 17px;margin-top: 10px;margin-left: 20px;color: black;">好友请求</p>
+							<ul class="mui-table-view" style="margin-top: -2px;">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<img class="mui-media-object mui-pull-left" style='width:45px;height:45px' src="../images/touxiang5.png">
+										<div class="mui-media-body" style="margin-top: 0px;">
+											<span style="font-size:18px;margin-top: 5px;" class='bold4'>NANA</span><br>
+											<div class="mui-pull-left">
+												<div class="mui-row" style="font-size: small;">
+													<div class="mui-col-sm-1">
+														<span class="light4" style="margin-left: 5px;">321</span>
+													</div>
+													<div class="mui-col-sm-1" style="margin-left: 5px;">
+														<img src='../images/love.png' />
+													</div>
+												</div>
+												<span style="font-size:15px;margin-top: 5px;color:#e7ebec" class='light4'>唯有爱与美食不可辜负</span><br>
+											</div>
+											<div class="mui-pull-right">
+												<button type="button" id='add' style="background: url(../images/add_friend.png);width: 28px;height: 28px;border: none;"></button>
+											</div>
+										</div>
+									</a>
+								</li>
+
+							</ul>
+							<p class="light4" style="font-size: 17px;margin-top: 10px;margin-left: 20px;color: black;">现有好友</p>
+						</div>
+						<div class="mui-scroll">
+							<ul id="OA_task_2" class="mui-table-view" style="margin-top: -2px;">
+								<li class="mui-table-view-cell mui-media">
+									<div class="mui-slider-left mui-disabled">
+										<a class="mui-btn " style="background: url(../images/delete.png);width:35px;height: 80px;"></a>
+									</div>
+									<div class="mui-slider-handle">
+
+										<a href="javascript:;">
+											<img class="mui-media-object mui-pull-left" style='width:45px;height:45px' src="../images/touxiang6.png">
+											<div class="mui-media-body" style="margin-top: 0px;">
+												<span style="font-size:18px;margin-top: 5px;color: black;" class='bold4'>麦粒</span><br>
+												<div class="mui-pull-left">
+													<div class="mui-row" style="font-size: small;">
+														<div class="mui-col-sm-1">
+															<span class="light4" style="margin-left: 5px;color: black;">228</span>
+														</div>
+														<div class="mui-col-sm-1" style="margin-left: 5px;">
+															<img src='../images/love.png' />
+														</div>
+													</div>
+													<span style="font-size:15px;margin-top: 5px;color:#e7ebec" class='light4'>来一场说走就走的旅行.</span><br>
+												</div>
+												<div class="mui-pull-right">
+													<button type="button" style="background: url(../images/jiantou.png) 0 0 no-repeat;width: 20px;height: 20px;border: none;"></button>
+												</div>
+											</div>
+										</a>
+
+									</div>
+								</li>
+
+								<li class="mui-table-view-cell mui-media">
+									<div class="mui-slider-left mui-disabled">
+										<a class="mui-btn " style="background: url(../images/delete.png);width:35px;height: 80px;"></a>
+									</div>
+									<div class="mui-slider-handle">
+
+										<a href="javascript:;">
+											<img class="mui-media-object mui-pull-left" style='width:45px;height:45px' src="../images/touxiang3.png">
+											<div class="mui-media-body" style="margin-top: 0px;">
+												<span style="font-size:18px;margin-top: 5px;color: black;" class='bold4'>佩奇</span><br>
+												<div class="mui-pull-left">
+													<div class="mui-row" style="font-size: small;">
+														<div class="mui-col-sm-1">
+															<span class="light4" style="margin-left: 5px;color: black;">168</span>
+														</div>
+														<div class="mui-col-sm-1" style="margin-left: 5px;">
+															<img src='../images/love.png' />
+														</div>
+													</div>
+													<span style="font-size:15px;margin-top: 5px;color:#e7ebec" class='light4'>可爱如猪.</span><br>
+												</div>
+												<div class="mui-pull-right">
+													<button type="button" style="background: url(../images/jiantou.png) 0 0 no-repeat;width: 20px;height: 20px;border: none;"></button>
+												</div>
+
+											</div>
+										</a>
+
+									</div>
+								</li>
+
+								<li class="mui-table-view-cell mui-media">
+									<div class="mui-slider-left mui-disabled">
+										<a class="mui-btn " style="background: url(../images/delete.png);width:35px;height: 80px;"></a>
+									</div>
+									<div class="mui-slider-handle">
+
+										<a href="javascript:;">
+											<img class="mui-media-object mui-pull-left" style='width:45px;height:45px' src="../images/touxiang7.png">
+											<div class="mui-media-body" style="margin-top: 0px;">
+												<span style="font-size:18px;margin-top: 5px;color: black;" class='bold4'>DNA</span><br>
+												<div class="mui-pull-left">
+													<div class="mui-row" style="font-size: small;">
+														<div class="mui-col-sm-1">
+															<span class="light4" style="margin-left: 5px;color: black;">330</span>
+														</div>
+														<div class="mui-col-sm-1" style="margin-left: 5px;">
+															<img src='../images/love.png' />
+														</div>
+													</div>
+													<span style="font-size:15px;margin-top: 5px;color:#e7ebec" class='light4'>狗是人类最好的朋友.</span><br>
+												</div>
+												<div class="mui-pull-right">
+													<button type="button" style="background: url(../images/jiantou.png) 0 0 no-repeat;width: 20px;height: 20px;border: none;"></button>
+												</div>
+											</div>
+										</a>
+
+									</div>
+								</li>
+							</ul>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			</div>
+			<script src="../js/mui.min.js"></script>
+			<script type="text/javascript">
+				mui.init()
+				var btn = document.getElementById("back");
+				btn.addEventListener("click", function() {
+					mui.back()
+				});
+				
+				var btn1 = document.getElementById("add");   
+    //监听点击事件   
+    btn1.addEventListener("tap",function () {  
+    	
+     var webview = mui.openWindow({
+					url:"friendhomelist.html",
+					id: 'friendhomelist.html',
+				});
+    }); 
+
+				(function($) {
+
+					var btnArray = ['确认', '取消'];
+
+					//第二个demo，向右拖拽后显示操作图标，释放后自动触发的业务逻辑
+					$('#OA_task_2').on('slideright', '.mui-table-view-cell', function(event) {
+						var elem = this;
+						mui.confirm('确认删除该好友？', '拼单总是情', btnArray, function(e) {
+							if(e.index == 0) {
+								elem.parentNode.removeChild(elem);
+							} else {
+								setTimeout(function() {
+									$.swipeoutClose(elem);
+								}, 0);
+							}
+						});
+					});
+				})(mui);
+			</script>
+	</body>
+
+</html>
