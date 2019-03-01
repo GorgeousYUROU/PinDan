@@ -1,16 +1,16 @@
-1.�ļ������ƺ���ע�����ļ�����
+1.文件夹名称后面注明了文件类型
 
-2.���ڴ��룺������д��ҳ�����ƣ�html�ļ���������ԭ��ͼ��һ�£�����ΪΪ�˽��������Կ��ܺϲ���һ��ҳ�棬
-����һ��ҳ���ֳ�����ҳ��
+2.关于代码：代码所写的页面名称（html文件）可能与原型图不一致，是因为为了界面流畅性可能合并成一个页面，
+或者一个页面拆分成两个页面
 
-3.html�ļ��󲿷���pinDan--code--html\pinDan\restaurant
+3.html文件大部分在pinDan--code--html\pinDan\restaurant
 
-4.��������Ƶ��ɣ������뿴��������ļ���video
+4.交互由视频完成，详情请看艺术设计文件夹video
 
-5.���԰�װapk������Ʒ
+5.可以安装apk点击每个页面的首个单品  看最后成品
 
 6.
 
-��ƴ��app���������ݰ�Ȩ����  quadruplet �Ŷ�
+此拼单app的所有内容版权归属  quadruplet 团队
 
-����ѧϰ����ֹ����ֱ����
+仅供学习，禁止伸手直接用
